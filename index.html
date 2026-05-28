@@ -57,10 +57,9 @@
     }
 
     .embed-box {
-      background: #1b1b1b;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+     display: flex;
+  flex-direction: column;
+  align-items: center;
     }
 
     .embed-box h3 {
@@ -69,9 +68,8 @@
     }
 
     iframe {
-      width: 100%;
-      border: none;
-      border-radius: 12px;
+        width: 100%;
+  max-width: 500px;
     }
 
   </style>
@@ -97,15 +95,7 @@
 
       <!-- SPOTIFY 1 -->
       <div class="embed-box">
-.embed-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.embed-box iframe {
-  width: 100%;
-  max-width: 500px;
-}
+
         <h3>Spotify: Modern Worship Songs</h3>
 
         <iframe
