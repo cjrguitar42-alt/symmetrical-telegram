@@ -1,74 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Chris Richter</title>
 
   <style>
+
     body {
-      font-family: Arial;
       margin: 0;
-      background: #111;
+      font-family: Arial, sans-serif;
+      background-color: #111;
       color: white;
-      text-align: center;
+      line-height: 1.6;
     }
+
+    /* HERO IMAGE */
 
     .hero {
       background-image: url('yourphoto.jpg');
       background-size: cover;
       background-position: center;
-      height: 350px;
+      height: 400px;
+      width: 100%;
     }
 
+    /* MAIN CONTENT */
+
     .content {
-      padding: 40px;
-      max-width: 800px;
+      max-width: 1200px;
       margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    p.bio {
+      text-align: center;
+      max-width: 700px;
+      margin: 20px auto 50px auto;
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    /* EMBED GRID */
+
+    .embed-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .embed-box {
+      background: #1b1b1b;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .embed-box h3 {
+      text-align: center;
+      margin-bottom: 15px;
     }
 
     iframe {
-      margin-top: 20px;
+      width: 100%;
+      border: none;
       border-radius: 12px;
     }
+
   </style>
 </head>
 
 <body>
 
-<div class="hero"></div>
+  <!-- HERO IMAGE -->
+  <div class="hero"></div>
 
-<div class="content">
+  <!-- CONTENT -->
+  <div class="content">
 
-  <h1>Your Artist Name</h1>
+    <h1>Chris Richter</h1>
 
-  <p>
-    Short artist bio goes here.
-    Describe your sound, influences, or latest project.
-  </p>
+    <p class="bio">
+      Chris Richter is a classical guitarist from Dallas, Texas.  With a unique repertoire of music spanning traditional classical pieces to modern popular music, he has performed throughout Texas at venues everywhere from house shows to Dallas's legendary House of Blues.  He currently performs regularly at several hotels and country clubs as well as doing private events and weddings throughout the Dallas-Fort Worth area.  He has also released several albums of music, available on iTunes, Amazon, Spotify, & more.
+    </p>
 
-  <h2>Spotify</h2>
+    <h2>Listen Now</h2>
 
-  <!-- Spotify Embed -->
-  <iframe style="border-radius:12px"
-    src="https://open.spotify.com/embed/album/0ROU7O9l6zKyHJ2xEyKehd?utm_source=generator"
-    width="100%"
-    height="152"
-    frameBorder="0"
-    allowfullscreen=""
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-  </iframe>
+    <div class="embed-grid">
 
-  <h2>Apple Music</h2>
+      <!-- SPOTIFY 1 -->
+      <div class="embed-box">
+        <h3>Spotify Release 1</h3>
 
-  <!-- Apple Music Embed -->
-  <iframe allow="autoplay *; encrypted-media *;"
-    frameborder="0"
-    height="450"
-    style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
-    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
-    src="https://embed.music.apple.com/us/album/10-popular-worship-songs-arranged-for-instrumental/1879158731">
-  </iframe>
+        <iframe
+          src="https://open.spotify.com/embed/album/0ROU7O9l6zKyHJ2xEyKehd?utm_source=generator"
+          height="352"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+      </div>
 
-</div>
+      <!-- SPOTIFY 2 -->
+      <div class="embed-box">
+        <h3>Spotify Release 2</h3>
+
+        <iframe
+          src="https://open.spotify.com/album/10XbnnfTG6xALUjwSXftZH?si=wTYNF_DESHS2cYcHVmSrhQ"
+          height="352"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+      </div>
+
+      <!-- APPLE MUSIC 1 -->
+      <div class="embed-box">
+        <h3>Apple Music Release 1</h3>
+
+        <iframe
+          allow="autoplay *; encrypted-media *;"
+          height="450"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+          src="https://embed.music.apple.com/us/album/10-popular-worship-songs-arranged-for-instrumental/1879158731">
+        </iframe>
+      </div>
+
+      <!-- APPLE MUSIC 2 -->
+      <div class="embed-box">
+        <h3>Apple Music Release 2</h3>
+
+        <iframe
+          allow="autoplay *; encrypted-media *;"
+          height="450"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+          src="https://embed.music.apple.com/us/album/classical-guitar-worship-100-beloved-hymns-arranged/1672414131">
+        </iframe>
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
