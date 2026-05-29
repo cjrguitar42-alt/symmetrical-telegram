@@ -25,23 +25,12 @@ h1, h2, h3 {
 }
 
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-  background:
-    linear-gradient(135deg, #111, #1b1b1b);
+  background-image: url('./Picture.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
 }
-
-.hero img {
-  width: 100%;
-  max-width: 1200px;
-  max-height: 700px;
-  object-fit: contain;
-  border-radius: 20px;
-  box-shadow: 0 0 40px rgba(0,0,0,0.5);
-}
-
 .content {
   max-width: 1200px;
   margin: auto;
@@ -149,9 +138,7 @@ h1, h2, h3 {
 <body>
 
   <!-- HERO IMAGE -->
-  <div class="hero">
-  <img src="./Picture.jpeg" alt="Artist Photo">
-</div>
+ <div class="hero"></div>
   <!-- CONTENT -->
   <div class="content">
 
