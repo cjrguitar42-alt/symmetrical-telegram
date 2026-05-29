@@ -25,11 +25,21 @@ h1, h2, h3 {
 }
 
 .hero {
-  position: relative;
-  background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.75)), url('./Picture.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background:
+    linear-gradient(135deg, #111, #1b1b1b);
+}
+
+.hero img {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 700px;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
 }
 
 .content {
@@ -139,8 +149,9 @@ h1, h2, h3 {
 <body>
 
   <!-- HERO IMAGE -->
-  <div class="hero"></div>
-
+  <div class="hero">
+  <img src="./artistphoto.jpg" alt="Picture.jpeg">
+</div>
   <!-- CONTENT -->
   <div class="content">
 
