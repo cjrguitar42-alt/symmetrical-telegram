@@ -75,9 +75,7 @@ h1, h2, h3 {
   box-shadow: 0 0 30px rgba(150, 80, 255, 0.25);
 }
 
-/* SPOTIFY ROW */
-
-.spotify-row {
+.soundcloud-row {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -85,30 +83,10 @@ h1, h2, h3 {
   margin-top: 30px;
 }
 
-.spotify-row iframe {
-  max-width: 400px;
-  flex: 1 1 400px;
-}
-
-
-/* APPLE MUSIC ROW */
-
-.apple-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.apple-row iframe {
-  flex: 1 1 400px;
-}
-    
-    iframe {
-        width: 100%;
+.soundcloud-row iframe {
+  flex: 1 1 500px;
   max-width: 500px;
-    }
+}
 
 .gallery {
   display: grid;
@@ -157,67 +135,31 @@ h1, h2, h3 {
     
     <div class="embed-grid">
 
-    <!-- SPOTIFY SECTION -->
+<h2>Featured Music</h2>
 
-<h2>Spotify</h2>
+<div class="soundcloud-row">
 
-<div class="spotify-row">
-
-  <!-- Spotify Embed 1 -->
+  <!-- SoundCloud Embed 1 -->
   <iframe
-    style="border-radius:12px"
-    src="https://open.spotify.com/embed/album/0ROU7O9l6zKyHJ2xEyKehd?utm_source=generator"
     width="100%"
-    height="352"
-    frameBorder="0"
-    allowfullscreen=""
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    height="300"
+    scrolling="no"
+    frameborder="no"
+    allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=YOUR_TRACK_OR_PLAYLIST_URL_1&color=%238a63d2&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&visual=true">
   </iframe>
 
-  <!-- Spotify Embed 2 -->
+  <!-- SoundCloud Embed 2 -->
   <iframe
-    style="border-radius:12px"
-    src="https://open.spotify.com/embed/album/3txUkWaCKLZH4wQsHDjOY5?utm_source=generator"
     width="100%"
-    height="352"
-    frameBorder="0"
-    allowfullscreen=""
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    height="300"
+    scrolling="no"
+    frameborder="no"
+    allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=YOUR_TRACK_OR_PLAYLIST_URL_2&color=%238a63d2&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&visual=true">
   </iframe>
 
 </div>
-
-
-<!-- APPLE MUSIC SECTION -->
-
-<h2 style="margin-top:70px;">Apple Music</h2>
-
-<div class="apple-row">
-
-  <!-- Apple Music Embed 1 -->
-  <iframe
-    allow="autoplay *; encrypted-media *;"
-    frameborder="0"
-    height="450"
-    style="width:100%; max-width:400px; overflow:hidden; background:transparent; border-radius:12px;"
-    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
-    src="https://embed.music.apple.com/us/album/10-popular-worship-songs-arranged-for-instrumental/1879158731">
-  </iframe>
-
-  <!-- Apple Music Embed 2 -->
-  <iframe
-    allow="autoplay *; encrypted-media *;"
-    frameborder="0"
-    height="450"
-    style="width:100%; max-width:400px; overflow:hidden; background:transparent; border-radius:12px;"
-    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
-    src="https://embed.music.apple.com/us/album/100-famous-hymns-arranged-for-classical-guitar-vol-1/1874378843">
-  </iframe>
-
-</div>
-    </div>
-
-  </div>
 <!-- PHOTO GALLERY -->
 
 
